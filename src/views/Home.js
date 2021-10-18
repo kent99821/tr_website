@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BackTop, Row, Menu, Col } from 'antd';
+import { BackTop, Row, Menu, Col, Carousel  } from 'antd';
 import {
     HomeOutlined,
     FileSearchOutlined,
@@ -23,6 +23,13 @@ import Price from './Price';
 import Activity from './Activity';
 import Join from './Join';
 
+const contentStyle = {
+    height: '160px',
+    color: '#fff',
+    lineHeight: '160px',
+    textAlign: 'center',
+    background: '#364d79',
+  };
 function Home() {
     const [current, setCurrent] = useState('');
     const handleClick = e => {
@@ -32,8 +39,8 @@ function Home() {
     return (
         <div>
             <BackTop />
-            <Row type="flex" justify="left" className="menu">
-                <Col xs={24} sm={24} md={24} lg={24} xl={24} xxl={10}>
+            <Row type="flex" justify="center" className="menu">
+                <Col xs={20} sm={20} md={20} lg={20} xl={24} xxl={24}>
                     <Menu mode="horizontal" className="menu" onClick={handleClick} selectedKeys={[current]}>
                         <Menu.Item key="index" className="menuItem" icon={<HomeOutlined />}>
                             <Link to="/turing/index"> 首页</Link>
@@ -62,7 +69,7 @@ function Home() {
                     </Menu>
                 </Col>
             </Row>
-            <div>
+            <div className="show">
                 <Switch>
                     <Route path="/turing/index" component={ClientIndex}></Route>
                     <Route path="/turing/introduce" component={Introduce}></Route>

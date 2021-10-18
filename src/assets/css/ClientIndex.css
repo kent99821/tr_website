@@ -1,0 +1,50 @@
+.card{
+    margin: 1vw;
+    height: 31vh; 
+    overflow: hidden;
+}
+.avtar{
+    display:block;
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+.teacherMsg{
+    display:block;
+    float: right;
+    width: 65%;
+    font-size: 0.8rem;
+    overflow: hidden;
+    height: 100%;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+.introduce{
+    /* height: 9.2vw; */
+    font-size: 1rem;
+    overflow: hidden;
+    height: 100%;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.inform{
+    overflow: hidden;
+    height: 100%;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    -webkit-box-orient: vertical;
+}

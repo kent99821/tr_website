@@ -3,5 +3,8 @@
     text-align: center;
 }
 .menuItem{
-    margin-left: 3vw;
+    margin-left: 2vw;
+}
+.show{
+    background-color: #f4f5f5;
 }

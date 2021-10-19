@@ -18,10 +18,11 @@ import Notice from './Notice';
 import Leader from './Leader';
 import Teacher from './Teacher';
 import TeamMate from './TeamMate';
-import Project from "./Projec";
+import Project from "./Project";
 import Price from './Price';
 import Activity from './Activity';
 import Join from './Join';
+import Lives from "./lives";
 
 const contentStyle = {
     height: '160px',
@@ -81,6 +82,8 @@ function Home() {
                     <Route path="/turing/price" component={Price}></Route>
                     <Route path="/turing/activity" component={Activity}></Route>
                     <Route path="/turing/join" component={Join}></Route>
+                    <Route path="/turing/lives" component={Lives}></Route>
+                    
                 </Switch>
             </div>
         </div>

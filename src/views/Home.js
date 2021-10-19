@@ -23,6 +23,7 @@ import Price from './Price';
 import Activity from './Activity';
 import Join from './Join';
 import Lives from "./lives";
+import members from "./members";
 
 const contentStyle = {
     height: '160px',
@@ -34,7 +35,7 @@ const contentStyle = {
 function Home() {
     const [current, setCurrent] = useState('');
     const handleClick = e => {
-        console.log('click ', e);
+        
         setCurrent(e.key);
     };
     return (
@@ -82,7 +83,8 @@ function Home() {
                     <Route path="/turing/price" component={Price}></Route>
                     <Route path="/turing/activity" component={Activity}></Route>
                     <Route path="/turing/join" component={Join}></Route>
-                    <Route path="/turing/lives" component={Lives}></Route>
+                    <Route path="/turing/live" component={Lives}></Route>
+                    <Route path="/turing/member" component={members}></Route>
                     
                 </Switch>
             </div>

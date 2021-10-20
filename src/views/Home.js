@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BackTop, Row, Menu, Col, Carousel  } from 'antd';
+import { BackTop, Row, Menu, Col, Layout } from 'antd';
 import {
     HomeOutlined,
     FileSearchOutlined,
@@ -24,14 +24,9 @@ import Activity from './Activity';
 import Join from './Join';
 import Lives from "./lives";
 import members from "./members";
+import Footers from "../components/Footers";
 
-const contentStyle = {
-    height: '160px',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: '#364d79',
-  };
+const { Header, Footer, Sider, Content } = Layout;
 function Home() {
     const [current, setCurrent] = useState('');
     const handleClick = e => {
@@ -41,6 +36,7 @@ function Home() {
     return (
         <div>
             <BackTop />
+            <Header className="header">
             <Row type="flex" justify="center" className="menu">
                 <Col xs={20} sm={20} md={20} lg={20} xl={24} xxl={24}>
                     <Menu mode="horizontal" className="menu" onClick={handleClick} selectedKeys={[current]}>
@@ -71,6 +67,8 @@ function Home() {
                     </Menu>
                 </Col>
             </Row>
+            </Header>
+            <Content>
             <div className="show">
                 <Switch>
                     <Route path="/turing/index" component={ClientIndex}></Route>
@@ -85,9 +83,12 @@ function Home() {
                     <Route path="/turing/join" component={Join}></Route>
                     <Route path="/turing/live" component={Lives}></Route>
                     <Route path="/turing/member" component={members}></Route>
-                    
                 </Switch>
             </div>
+            </Content>
+            <Footer>
+            <Footers/>
+            </Footer>
         </div>
     )
 }

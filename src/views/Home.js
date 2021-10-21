@@ -62,6 +62,9 @@ function Home() {
                             <Link to="/turing/price">团队荣誉</Link>
                         </Menu.Item>
                         <Menu.Item className="menuItem" icon={<UserAddOutlined />}>
+                            <Link to="/turing/live">团队生活</Link>
+                        </Menu.Item>
+                        <Menu.Item className="menuItem" icon={<UserAddOutlined />}>
                             <Link to="/turing/Join">加入我们</Link>
                         </Menu.Item>
                     </Menu>

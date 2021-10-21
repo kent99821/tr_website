@@ -1,0 +1,24 @@
+.introduce{
+    margin: 1% 15%;
+    width: 70%;
+    height: 100%; 
+}
+.title{
+    text-align: center;
+    font-size: 2vw;
+}
+.content{
+    font-size: 1.3vw;
+    text-align: left; 
+    overflow: hidden;
+}
+.date{
+font-size: 1vw;
+margin-top: 2vw;
+text-align: right;
+}
+.video{
+    /* margin: 1%; */
+    width: 90%;
+    height: 90%;
+}

@@ -48,6 +48,9 @@
     line-clamp: 5;
     -webkit-box-orient: vertical;
 }
+.infomItem{
+    text-align: left;
+}
 .title{
     display: block;
     font-size: 2em;

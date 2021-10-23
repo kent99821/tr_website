@@ -1,0 +1,39 @@
+.tab{
+    margin: 1%;
+    width: 98%;
+    height: 100%;
+}
+.pCard{
+   margin: 1%;
+}
+.memberIcon{
+    width: 10%;
+    height: 100%;
+}
+.memberImg{
+    width: 100%;
+    height: 5%;
+    float: left;
+    margin: 0% 17% 0% 0%; 
+}
+.mInform{
+    width: 70%;
+    height: 100%;
+    margin: 0%;
+}
+.memberName{
+    
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 0;
+}
+
+.introduce{
+    font-size: 1.2vw;
+    margin: 0;
+    font-weight: bold;
+} 
+.mClass,.mLearn,.mAfter{
+    font-size: 1vw;
+    margin: 0 15%;
+}

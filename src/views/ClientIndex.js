@@ -126,7 +126,7 @@ function ClientIndex() {
                     <Card className="card" title="团队通告" bordered={true}>
                         <div className="inform">
                             {informs.map(item => (
-                                <li key={item.informId}><NotificationTwoTone />&nbsp;&nbsp;{item.informTitle}</li>
+                                <li className="infomItem" key={item.informId}><NotificationTwoTone />&nbsp;&nbsp;{item.informTitle}</li>
                             ))}
                         </div>
                     </Card>

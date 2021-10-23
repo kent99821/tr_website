@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Row, Col,  message, Timeline, Radio } from 'antd';
+import { Row, Col,  message, Timeline } from 'antd';
 import '../assets/css/Notice.css'
 import apiUrl from "../conf/apiUrl";
 import axios from "axios";
@@ -15,7 +15,7 @@ function Notice() {
             withCredentials: true
         }).then(
             res => {
-                console.log(res.data.data);
+                // console.log(res.data.data);
                 setInforms(res.data.data);
                 setShow(true);
             })

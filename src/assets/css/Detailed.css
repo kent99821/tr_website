@@ -1,0 +1,21 @@
+.detailed{
+    text-align: center;
+}
+.title{
+    margin: 2%;
+    font-size: 2vw;
+}
+.date{
+    margin: 2%;
+    text-align: center;
+    font-size: 1vw;
+}
+.content{
+    margin: 2%;
+    font-size: 1.5vw;
+}
+.photo{
+    margin: 2%;
+    width: 50%;
+    height: 100%;
+}

@@ -10,7 +10,7 @@ import {
     TrophyOutlined,
     UserAddOutlined
 } from '@ant-design/icons';
-import '../assets/css/home.css';
+import '../assets/css/Home.css';
 import { Link, Switch, Route } from "react-router-dom";
 import ClientIndex from './ClientIndex';
 import Introduce from './Introduce';
@@ -23,8 +23,9 @@ import Price from './Price';
 import Activity from './Activity';
 import Join from './Join';
 import Lives from "./lives";
-import members from "./members";
+import Members from "./Members";
 import Footers from "../components/Footers";
+import Detailed from "./Detailed";
 
 const { Header, Footer, Sider, Content } = Layout;
 function Home() {
@@ -85,7 +86,8 @@ function Home() {
                     <Route path="/turing/activity" component={Activity}></Route>
                     <Route path="/turing/join" component={Join}></Route>
                     <Route path="/turing/live" component={Lives}></Route>
-                    <Route path="/turing/member" component={members}></Route>
+                    <Route path="/turing/member" component={Members}></Route>
+                    <Route path="/turing/detailed/:id"  component={Detailed}></Route>
                 </Switch>
             </div>
             </Content>

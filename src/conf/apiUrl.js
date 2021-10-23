@@ -5,6 +5,8 @@ let apiUrl = {
     inform:baseUrl + "informs",
     project:baseUrl + "peojects",
     live:baseUrl + "lives",
-    member:baseUrl + "members"
+    member:baseUrl + "members",
+    leader: baseUrl + "leadInspections",
+    leaderId: baseUrl + "leadInspection?id="
 }
 export default apiUrl;

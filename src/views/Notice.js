@@ -15,7 +15,6 @@ function Notice() {
             withCredentials: true
         }).then(
             res => {
-                // console.log(res.data.data);
                 setInforms(res.data.data);
                 setShow(true);
             })

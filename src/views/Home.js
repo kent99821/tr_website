@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BackTop, Row, Menu, Col, Layout } from 'antd';
+import { BackTop, Row, Menu, Col, Layout, Affix } from 'antd';
 import '../assets/css/Home.css';
 import { Link, Switch, Route } from "react-router-dom";
 import ClientIndex from './ClientIndex';
@@ -26,6 +26,7 @@ function Home() {
     return (
         <div>
             <BackTop />
+            <Affix offsetTop={0}>
             <Header className="header">
             <Row type="flex" justify="center" className="menu">
                 <Col xs={20} sm={20} md={20} lg={20} xl={24} xxl={24}>
@@ -66,6 +67,7 @@ function Home() {
                 </Col>
             </Row>
             </Header>
+            </Affix>
             <Content>
             <div className="show">
                 <Switch>

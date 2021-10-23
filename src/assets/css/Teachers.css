@@ -1,0 +1,39 @@
+.avtar{
+    display:block;
+    width: 30%;
+    height: 100%;
+}
+.tCard{
+    margin: 1% 12.5% 1% 12.5%;
+    width:75%;
+    height: 60%;
+}
+.namePostion{
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.mCard{
+    margin: 1% 12.5% 1% 12.5%;
+    width: 75%;
+    height: 60%;
+}
+.inform{
+    text-align: center;
+    font-size: 1vw;
+    font-weight: bold;
+}
+.content{
+    width: 92%;
+}
+.field{
+    margin: 1% 0 0 5% ;
+    font-weight: bold;
+    font-size: 2vw;
+    border: 0.2vw solid skyblue;
+}
+
+.text{
+    margin: 1% 0 0 5% ;
+    font-size: 1.5vw;
+}

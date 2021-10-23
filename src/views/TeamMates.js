@@ -1,7 +1,7 @@
 import React from "react";
-function Members(){
+function TeamMates(){
     return(
         <div>团队成员</div>
     )
 }
-export default Members;
+export default TeamMates;

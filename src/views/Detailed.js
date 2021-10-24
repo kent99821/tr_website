@@ -37,7 +37,7 @@ function Detailed(props) {
                     <h1 className="title">{lead.title}</h1>
                     <p className="date">发布日期: {lead.date}</p>
                     <p className="content">{lead.content}</p>
-                    <img className="photo" src={lead.img} />
+                    <img className="photo" alt={lead.title} src={lead.img} />
                 </Col>
             </Row>
 

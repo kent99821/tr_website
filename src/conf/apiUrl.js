@@ -10,6 +10,7 @@ let apiUrl = {
     leaderId: baseUrl + "leadInspection?id=",
     memberPage: baseUrl + "member/page",
     memberTeach: baseUrl + "member/teach",
-    price: baseUrl + "awards"
+    price: baseUrl + "awards",
+    resume: baseUrl + "resume"
 }
 export default apiUrl;

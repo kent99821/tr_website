@@ -7,7 +7,7 @@ import axios from "axios";
 function Detailed(props) {
     const [lead, setLead] = useState({});
     const [show, setShow] = useState(false);
-    const getProp = () => {
+    const getLead = () => {
         const id = props.match.params.id;
         // 领导视察
         axios({
@@ -23,7 +23,7 @@ function Detailed(props) {
             })
     }
     useEffect(() => {
-        getProp();
+        getLead();
     }, [])
     if (!show) {
         return (

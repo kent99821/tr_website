@@ -21,7 +21,7 @@ function Price() {
     }
     useEffect(() => {
         getPrices();
-    }, [])
+    }, []);
     if (!show) {
         return (
             message.loading('资源加载中', 2)

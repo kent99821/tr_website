@@ -1,0 +1,31 @@
+.aCard{
+    margin: 2%;
+}
+.imgDiv{
+    width: 80vw;
+}
+.aImg{
+    width: 100%;
+    height: 45vh;
+  
+}
+.aContent{
+    margin: 2%;
+}
+.aTitle{
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.aDate{
+    text-align: center;
+    font-size: 2vw;
+    font-family: cursive;
+}
+.aContext{
+    font-size: 1.5vw;
+    font-family: cursive;
+
+}
+
+

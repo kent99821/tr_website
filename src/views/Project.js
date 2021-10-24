@@ -40,8 +40,8 @@ function Project() {
                         </Row>
                         <Row>
                         <Col xs={24} sm={12} md={12} lg={12} xl={12} xxl={12}>
-                            <div className="prGif">
-                                <Card className="prImg" title="团队项目">
+                            <div className="gif">
+                                <Card className="pmg" title="团队项目">
                                     <p className="mem">项目成员</p>
                                     <p className="mem"> {
                                     item.projectMembers.map(member=>(
@@ -54,8 +54,8 @@ function Project() {
                             </div>
                         </Col>
                         <Col xs={24} sm={12} md={12} lg={12} xl={12} xxl={12}>
-                            <div className="prGif"> 
-                                <img className="prImg" alt="prImg" src={item.projectGif}/>
+                            <div className="gif"> 
+                                <img className="pmg" alt="pmg" src={item.projectGif}/>
                             </div>
                         </Col>
                         </Row>

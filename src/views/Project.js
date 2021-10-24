@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Row, Col, message, Carousel, Card  } from 'antd';
+import { Row, Col, message, Card  } from 'antd';
 import '../assets/css/Project.css'
 import apiUrl from "../conf/apiUrl";
 import axios from "axios";
@@ -55,7 +55,7 @@ function Project() {
                         </Col>
                         <Col xs={24} sm={12} md={12} lg={12} xl={12} xxl={12}>
                             <div className="prGif"> 
-                                <img className="prImg" src={item.projectGif}/>
+                                <img className="prImg" alt="prImg" src={item.projectGif}/>
                             </div>
                         </Col>
                         </Row>

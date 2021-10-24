@@ -1,5 +1,5 @@
 import React,{ useState, useEffect } from "react";
-import { Row, Col, message, Card } from "antd";
+import { Row, Col, message} from "antd";
 import axios from "axios";
 import '../assets/css/Introduce.css';
 import apiUrl from "../conf/apiUrl";

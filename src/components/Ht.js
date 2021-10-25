@@ -13,7 +13,7 @@ function Ht() {
     const getMembers = (page, size) => {
         axios({
             method: 'get',
-            url: `${apiUrl.memberTeach}?page=${page}&?size=${size}&teachnology=后台`,
+            url: `${apiUrl.memberTeach}?page=${page}&size=${size}&teachnology=后台`,
             headers: { 'Access-Control-Allow-Orign': '*' },
             withCredentials: true
         }).then(
@@ -34,14 +34,14 @@ function Ht() {
     }, [])
     if (!show) {
         return (
-            message.loading('资源加载中', 2)
+            message.loading('资源加载中', 0.5)
         )
     }
 
     return (
         <div>
             <div>
-                {
+            {
                     members.map(item => (
                         <Row type="flex" align="middle" justify="center" wrap={true}>
                             <Col span={24}>
@@ -52,7 +52,7 @@ function Ht() {
                                     </div>
                                     <div className="mInform">
                                     <p className="memberName">{item.memberName}</p>
-                                    <p className="introduce">{item.memberIntroduction}</p>
+                                    <p className="mIntroduce">{item.memberIntroduction}</p>
                                     <p className="mClass">专业: {item.memberMajor}</p>
                                     <p className="mClass">班级: {item.memberClass}</p>
                                     <p className="mLearn">研究方向: {item.memberTechnology}</p>

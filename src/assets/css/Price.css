@@ -1,14 +1,14 @@
-.Ldcard{
-    margin: 4%;
-    width: 90%;
-    height: 100%;
-}
-.ldImg{
+.PriceCard{
     margin: 5%;
     width: 90%;
-    height: 10%;
+    height: 48vh;
 }
-.ldTitle{
+.Pimg{
+    margin: 5%;
+    width: 90%;
+    height: 8%;
+}
+.Ptitle{
     font-size: 1vw;
     text-align: center;
     font-weight: bold;

@@ -27,7 +27,7 @@ function Detailed(props) {
     }, [])
     if (!show) {
         return (
-            message.loading('资源加载中', 2)
+            message.loading('资源加载中', 0.5)
         )
     }
     return (

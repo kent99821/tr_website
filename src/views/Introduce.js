@@ -23,14 +23,14 @@ function Introduce(){
     }, [])
     if (!show) {
         return (
-            message.loading('资源加载中', 2)
+            message.loading('资源加载中', 0.5)
         )
     }
     return(
         <div>
             <Row>
             <Col xs={24} sm={12} md={12} lg={12} xl={12} xxl={12}>
-                <div className="introduce">
+                <div className="showI">
                     <h1 className="title">图灵智能创新团队介绍</h1>
                         <p className="content">{introduction.introductionInfo}</p>
                         <br/>
@@ -38,7 +38,7 @@ function Introduce(){
                 </div>
                 </Col>
                 <Col xs={24} sm={12} md={12} lg={12} xl={12} xxl={12} >
-                    <div className="introduce">
+                    <div className="showI">
                     <video className="video" src="http://150.158.171.105:9876/static/2021Video.mp4" controls="controls"></video>
                     </div>
                 </Col>

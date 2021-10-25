@@ -2,20 +2,22 @@
     display:block;
     width: 30%;
     height: 100%;
+    float: left;
 }
 .tCard{
-    margin: 1% 12.5% 1% 12.5%;
-    width:75%;
+    margin: 1% 10%;
+    width:80%;
     height: 60%;
 }
 .namePostion{
+    display: block;
     text-align: center;
     font-size: 2vw;
     font-weight: bold;
 }
 .mCard{
-    margin: 1% 12.5% 1% 12.5%;
-    width: 75%;
+    margin: 1% 10%;
+    width: 80%;
     height: 60%;
 }
 .inform{

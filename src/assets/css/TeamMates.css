@@ -22,18 +22,17 @@
     margin: 0%;
 }
 .memberName{
-    
     font-size: 2vw;
     font-weight: bold;
-    margin: 0;
+    margin: 0 18%;
 }
 
-.introduce{
+.mIntroduce{
     font-size: 1.2vw;
-    margin: 0;
+    margin: 0 18%;
     font-weight: bold;
 } 
 .mClass,.mLearn,.mAfter{
     font-size: 1vw;
-    margin: 0 15%;
+    margin: 0 18%;
 }

@@ -13,7 +13,7 @@ function All() {
     const getMembers = (page, size) => {
         axios({
             method: 'get',
-            url: `${apiUrl.memberPage}?page=${page}?&size=${size}`,
+            url: `${apiUrl.memberPage}?page=${page}&size=${size}`,
             headers: { 'Access-Control-Allow-Orign': '*' },
             withCredentials: true
         }).then(
@@ -34,14 +34,14 @@ function All() {
     }, [])
     if (!show) {
         return (
-            message.loading('资源加载中', 2)
+            message.loading('资源加载中', 0.5)
         )
     }
 
     return (
         <div>
             <div>
-                {
+            {
                     members.map(item => (
                         <Row type="flex" align="middle" justify="center" wrap={true}>
                             <Col span={24}>
@@ -52,8 +52,9 @@ function All() {
                                     </div>
                                     <div className="mInform">
                                     <p className="memberName">{item.memberName}</p>
-                                    <p className="introduce">{item.memberIntroduction}</p>
-                                    <p className="mClass">班级: {item.memberMajor}-{item.memberClass}</p>
+                                    <p className="mIntroduce">{item.memberIntroduction}</p>
+                                    <p className="mClass">专业: {item.memberMajor}</p>
+                                    <p className="mClass">班级: {item.memberClass}</p>
                                     <p className="mLearn">研究方向: {item.memberTechnology}</p>
                                     <p className="mAfter">毕业去向: {item.memAfterGraduatedDestination} </p>
                                     </div>

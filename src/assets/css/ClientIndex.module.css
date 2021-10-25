@@ -2,7 +2,6 @@
     margin: 1rem;
     height: 17rem; 
     overflow:hidden;
-    
 }
 .avtar{
     display:block;
@@ -96,7 +95,7 @@
 .memberCard{
     margin: 1rem;
     width: 90%;
-    height: 50%;
+    height: 40%;
 }
 .memberImg{
     width: 55%;
